@@ -1,0 +1,99 @@
+:root {
+    --background_color: #cce9f3;
+    --accent_light: #85c4e4;
+    --accent_dark: #488db4;
+    --text_blue: #022f56;
+    --text_black: #07233e;
+    --font_family_bold: 'Comfortaa-Bold', Arial, sans-serif;
+    --font_family_regular: 'Comfortaa-Regular', Arial, sans-serif;
+    --font_family_light: 'Comfortaa-Light', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* colors */
+
+body {
+    font-family: var(--font_family_regular);
+    background-color: var(--background_color);
+    color: var(--accent_dark);
+}
+
+header {
+    background-color: var(--text_black);
+}
+
+.nav-link {
+    color: white;
+}
+
+#about-me-container {
+    background-color: var(--accent_dark);
+    color: white;
+}
+
+#tech-stack,
+.tech-list {
+    background-color: var(--text_black);
+    color: var(--background_color);
+}
+
+
+
+#contact-form-container {
+    background-color: var(--text_black);
+    color: var(--background_color);
+}
+
+#projects-container {
+    background-color: var(--accent_dark);
+    color: white;
+}
+
+footer {
+    background-color: var(--text_black);
+    color: var(--background_color);
+}
+
+
+
+/* fonts */
+
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url("fonts/Comfortaa-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url('fonts/Comfortaa-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comfortaa-Light';
+    src: url('fonts/Comfortaa-Light.ttf') format('truetype');
+}
+
+#tech-stack,
+.tech-list {
+    font-family: var(--font_family_light);
+}
+
+/* text styling */
+
+.nav-link {
+    text-decoration: none;
+}
