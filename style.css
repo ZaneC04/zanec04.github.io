@@ -1,9 +1,11 @@
 :root {
     --background_color: #cce9f3;
+    --background-extra: #Fef5e7;
     --accent_light: #85c4e4;
     --accent_dark: #488db4;
     --text_blue: #022f56;
     --text_black: #07233e;
+
     --font_family_bold: 'Comfortaa-Bold', Arial, sans-serif;
     --font_family_regular: 'Comfortaa-Regular', Arial, sans-serif;
     --font_family_light: 'Comfortaa-Light', Arial, sans-serif;
@@ -33,7 +35,7 @@ img {
 
 body {
     font-family: var(--font_family_regular);
-    background-color: var(--background_color);
+    background-color: var(--background-extra);
     color: var(--accent_dark);
 }
 
