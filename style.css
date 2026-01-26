@@ -143,7 +143,7 @@ nav>ul {
     margin: auto;
     padding: 20px;
     font-size: larger;
-    margin-bottom: 150px;
+    margin-bottom: 110px;
     margin-top: 50px;
     gap: 10px;
 }
@@ -152,6 +152,7 @@ nav>ul {
     text-decoration: none;
 
 }
+
 
 
 #hero-section>div {
@@ -164,7 +165,7 @@ nav>ul {
     text-decoration: none;
     color: white;
     border: 1px solid var(--accent_dark);
-    padding: 8px;
+    padding: 12px;
     border-radius: 50px;
     margin-top: 15px;
 }
@@ -188,6 +189,7 @@ nav>ul {
 #tech-stack {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 #tech-stack>li {
@@ -226,10 +228,10 @@ nav>ul {
 }
 
 #projects-list>li {
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     background-color: var(--background_color);
     color: var(--accent_dark);
     border: 1px solid var(--background_color);
@@ -271,6 +273,10 @@ nav>ul {
     border-radius: 50px;
 }
 
+.project-link {
+    max-width: fit-content;
+}
+
 /* contact form styling */
 
 #contact-form-container {
@@ -301,14 +307,21 @@ nav>ul {
     gap: 10px;
 }
 
+form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
 input,
 textarea {
     font-family: var(--font_family_light);
+    padding: 5px;
 }
 
 button {
     border: 1px solid var(--accent_light);
-    padding: 5px;
+    padding: 8px;
     border-radius: 10px;
     font-family: var(--font_family_regular);
 }
@@ -319,10 +332,20 @@ footer {
     text-align: center;
 }
 
+#contact-links-container>div>div {
+    gap: 5px;
+}
+
+.link img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+
+
 /* link and button hover styling + animations */
 
 .link {
-    display: inline-block;
     position: relative;
 }
 
@@ -343,15 +366,83 @@ footer {
     left: 0;
 }
 
+#hero-section>p>a {
+    position: relative;
+}
+
+#hero-section>p>a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--text_black);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#hero-section>p>a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.project-link {
+    position: relative;
+}
+
+.project-link::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: var(--text_black);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.project-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+#hero-section>div>a {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+#hero-section>div>a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px;
+    background-color: var(--text_blue);
+}
+
+button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 12px;
+    background-color: var(--background_color);
+    border-color: var(--background_color);
+}
+
 /* sticky header */
 
 header {
     position: sticky;
     top: 0;
-    scroll-margin-top: 10px;
+    z-index: 1000;
 }
 
-
+#projects-container,
+#about-me-container,
+#hero-section,
+#contact-form-container {
+    scroll-margin-top: 120px;
+}
 
 /* media queries */
 
