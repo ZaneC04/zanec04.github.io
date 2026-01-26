@@ -13,34 +13,37 @@
         <img id="logo" src="img/headlogo.png" alt="Planet with stars">
         <nav>
             <ul>
-                <li><a class="nav-link" href="#about-me-container">About</a></li>
-                <li><a class="nav-link" href="#projects-container">Projects</a></li>
-                <li><a class="nav-link" href="#contact-form-container">Contact</a></li>
+                <li><a class="link" href="#about-me-container">About</a></li>
+                <li><a class="link" href="#projects-container">Projects</a></li>
+                <li><a class="link" href="#contact-form-container">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="hero-section">
-            <h1>Welcome!</h1>
+            <h1>★ Welcome! ★</h1>
             <h2>Zane Correa</h2>
             <p>Hey, I'm Zane. I'm currently a software engineering fellow, studying at the <a
                     href="https://www.marcylabschool.org/">Marcy Lab School</a> in Brooklyn, NY.</p>
-            <a href="#projects-container">My Work</a>
-            <a href="#contact-form-container">Contact</a>
+            <div>
+                <a href="#projects-container">My Work</a>
+                <a href="#contact-form-container">Contact</a>
+            </div>
         </section>
 
         <section id="about-me-container">
-            <h1>About Me</h1>
+            <h1>★ About Me ★</h1>
             <div id="img">
                 <img src="" alt="">
             </div>
             <div id="bio">
                 <p>Hi! Thank you for taking a look at my page. Before studying at the Marcy Lab School, I've always been
                     a passionate and hard-working creator. Now, as a software engineer, I strive to solve problems
-                    methodically while I aim to lead and inspire my collaborators to put their all.</p>
-                <p>My projects incorporate a smooth, productive, and efficient workflow where I can guarantee that
-                    you'll be able to feel the care that I put towards them.</p>
+                    methodically and aim to lead and inspire others to put their all.</p>
+                <p>In everything I make, I incorporate a smooth, productive, and efficient workflow where I can
+                    guarantee
+                    that you'll be able to feel the care that I put in.</p>
                 <p>When I'm not programming, I'm improving my digital art skills, exploring New York City, and spending
                     time with the people I love.</p>
             </div>
@@ -57,9 +60,9 @@
         </section>
 
 
-        <section>
-            <h1>My Projects</h1>
-            <ul id="projects-container">
+        <section id="projects-container">
+            <h1>★ My Projects ★</h1>
+            <ul id="projects-list">
                 <li>
                     <a href="">CLI Shopping List</a>
                     <p>A CLI Project where users can add and remove to a shopping list, all through the terminal.</p>
@@ -68,18 +71,6 @@
                             JavaScript (ES6+)</li>
                         <li>
                             Node.js
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Zane's Creative Library</a>
-                    <p>A static website highlighting some of my favorite artists and music, including links to all.</p>
-                    <ul class="tech-list">
-                        <li>
-                            HTML5
-                        </li>
-                        <li>
-                            CSS3
                         </li>
                     </ul>
                 </li>
@@ -101,15 +92,15 @@
             <form method="post">
                 <h2>Want to get in touch?</h2>
                 <p>Whether it is a question, an opportunity, or just wanting to say hi, please contact me!</p>
-                <div>
+                <div class="form-row">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" required>
+                    <input type="text" name="name" id="name" required placeholder="e.g John Doe">
                 </div>
-                <div>
+                <div class="form-row">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" required>
+                    <input type="text" name="email" id="email" required placeholder="johndoe64@email.com">
                 </div>
-                <div>
+                <div id="form-field">
                     <label for="message">Message</label>
                     <textarea name="message" id="message" cols="30" rows="10"
                         placeholder="Please type your message here...">
@@ -117,15 +108,17 @@
                 </div>
                 <button type="submit">Send Message</button>
             </form>
-            <p>You can also find me on:</p>
-            <a href="">GitHub</a>
-            <a href="">LinkedIn</a>
+            <div id="contact-links-container">
+                <p>You can also find me on:</p>
+                <a class="link" href="">GitHub</a>
+                <a class="link" href="">LinkedIn</a>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>Made with ♥️ by Zane Correa ★ © 2026</p>
+        <p>Made with ♥️ by Zane Correa ★ © All rights reserved.</p>
     </footer>
 </body>
 

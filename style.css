@@ -45,14 +45,6 @@ header {
     color: white;
 }
 
-#tech-stack,
-.tech-list {
-    background-color: var(--text_black);
-    color: var(--background_color);
-}
-
-
-
 #contact-form-container {
     background-color: var(--text_black);
     color: var(--background_color);
@@ -68,7 +60,18 @@ footer {
     color: var(--background_color);
 }
 
+button {
+    background-color: var(--accent_light);
+    color: var(--text_black);
+}
 
+#hero-section>div>a {
+    background-color: var(--accent_dark);
+}
+
+#hero-section>p>a {
+    color: var(--text_blue);
+}
 
 /* fonts */
 
@@ -94,6 +97,194 @@ footer {
 
 /* text styling */
 
-.nav-link {
+.link {
     text-decoration: none;
+    color: white;
+}
+
+/* header styling */
+
+header,
+nav>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 10px;
+}
+
+nav>ul {
+    gap: 10px;
+}
+
+
+#logo {
+    max-width: 100px;
+}
+
+/* hero section styling */
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    font-size: larger;
+}
+
+#hero-section>p>a {
+    text-decoration: none;
+
+}
+
+
+#hero-section>div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#hero-section>div>a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid var(--accent_dark);
+    padding: 8px;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+/* about me styling */
+
+#about-me-container {
+    padding: 35px;
+    border: 1px solid var(--accent_dark);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#tech-stack {
+    display: flex;
+    gap: 10px;
+}
+
+#tech-stack>li {
+    background-color: var(--text_black);
+    padding: 10px;
+    border: 1px solid var(--text_black);
+    border-radius: 50px;
+}
+
+/* projects styling */
+
+#projects-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1300px;
+    padding: 10px;
+    padding-bottom: 20px;
+    border: 1px solid var(--accent_dark);
+    border-radius: 30px;
+}
+
+#projects-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+#projects-container>h1 {
+    padding-bottom: 20px;
+}
+
+#projects-list>li {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--background_color);
+    color: var(--accent_dark);
+    border: 1px solid var(--background_color);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+#projects-list>li>a {
+    color: var(--text_black);
+    text-decoration: none;
+}
+
+.tech-list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.tech-list>li {
+    background-color: var(--text_black);
+    color: white;
+    padding: 10px;
+    border: 1px solid var(--text_black);
+    border-radius: 50px;
+}
+
+/* contact form styling */
+
+#contact-form-container {
+    margin-top: 50px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+#contact-form-container>#contact-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    font-family: var(--font_family_light);
+}
+
+button {
+    border: 1px solid var(--accent_light);
+    padding: 5px;
+    border-radius: 10px;
+    font-family: var(--font_family_regular);
+}
+
+/* footer styling */
+
+footer {
+    text-align: center;
 }
