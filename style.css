@@ -15,6 +15,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 ul {
     list-style: none;
 }
@@ -53,6 +58,10 @@ header {
 #projects-container {
     background-color: var(--accent_dark);
     color: white;
+}
+
+.project-example>a {
+    color: var(--text_blue);
 }
 
 footer {
@@ -134,6 +143,9 @@ nav>ul {
     margin: auto;
     padding: 20px;
     font-size: larger;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    gap: 10px;
 }
 
 #hero-section>p>a {
@@ -168,8 +180,9 @@ nav>ul {
     line-height: 25px;
     max-width: 1000px;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     margin-top: 50px;
+    gap: 15px;
 }
 
 #tech-stack {
@@ -178,6 +191,8 @@ nav>ul {
 }
 
 #tech-stack>li {
+    display: flex;
+    align-items: center;
     background-color: var(--text_black);
     padding: 10px;
     border: 1px solid var(--text_black);
@@ -196,11 +211,12 @@ nav>ul {
     padding-bottom: 20px;
     border: 1px solid var(--accent_dark);
     border-radius: 30px;
+    margin-bottom: 200px;
 }
 
 #projects-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 
 }
@@ -230,6 +246,20 @@ nav>ul {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.project-example {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-example>img {
+    max-width: 400px;
+}
+
+.project-example>a {
+    text-decoration: none;
 }
 
 
@@ -287,4 +317,52 @@ button {
 
 footer {
     text-align: center;
+}
+
+/* link and button hover styling + animations */
+
+.link {
+    display: inline-block;
+    position: relative;
+}
+
+.link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* sticky header */
+
+header {
+    position: sticky;
+    top: 0;
+    scroll-margin-top: 10px;
+}
+
+
+
+/* media queries */
+
+@media (min-width: 768px) {
+    #projects-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    #projects-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
