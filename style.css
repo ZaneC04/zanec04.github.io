@@ -84,6 +84,11 @@ button {
     color: var(--text_blue);
 }
 
+#projects-list h3,
+#projects-list p {
+    color: var(--text_blue);
+}
+
 /* fonts */
 
 @font-face {
@@ -154,7 +159,6 @@ nav>ul {
     text-decoration: none;
 
 }
-
 
 
 #hero-section>div {
@@ -239,6 +243,8 @@ nav>ul {
     border: 1px solid var(--background_color);
     border-radius: 10px;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 #projects-list>li>a {
@@ -259,7 +265,7 @@ nav>ul {
 }
 
 .project-example>img {
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .project-example>a {
