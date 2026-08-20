@@ -471,9 +471,3 @@ header {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-@media (min-width: 992px) {
-    #projects-list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
